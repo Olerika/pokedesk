@@ -1,0 +1,352 @@
+body {
+    font-family: Tahoma, Sans-Serif;
+    color: #32373e;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a, button {
+    outline: none;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+h2 {
+    padding: 40px 0 30px;
+    font-size: 40px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 14px;
+}
+button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+button#active {
+    background-color: #f2f2f2;
+}
+#filter_types {
+    margin-bottom: 20px;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.box {
+    width: 28%;
+    float: left;
+    padding: 20px;
+    border: 1px solid #bdbdbd;
+    height: 250px;
+    margin: 1%;
+}
+.box:hover {
+    cursor: pointer;
+}
+.imgs {
+    height: 140px;
+}
+.imgs img{
+    height: auto;
+    text-align: center;
+}
+.list_pokemon {
+    width: 60%;
+    overflow: auto;
+    margin-left: 5%;
+}
+.about {
+    text-align: left;
+    display: block;
+    margin: 10px 0 10px;
+}
+
+/*   types   */
+.about > span {
+    padding: 0px 10px;
+    display: inline-block;
+    /* vertical-align: middle; */
+    line-height: 23px;
+    height: 24px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    width: 75px;
+    margin: 2px 1px;
+    text-align: center;
+    font-weight: bold;
+}
+.box .container {
+    width: 100%;
+    height: 100%;
+}
+
+.box span.bug {
+    background:  #32373e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #0b0b0f , #4c555c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #0b0b0f , #4c555c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.dark{
+    background:  #7a1f25; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #321c28 , #c32222); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #321c28 , #c32222); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box span.dragon{
+    background:  #c26421; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #591008 , #dc7927); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #591008 , #dc7927); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.ghost{
+    background:  #a3a1aa; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #807f8f , #bab8bb); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #807f8f , #bab8bb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box span.ground{
+    background:  #84603b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #463324 , #9f7344); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #463324 , #9f7344); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.grass{
+    background:  #51a30c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #046a08 , #6ab60d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #046a08 , #6ab60d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.flying{
+    background:  #5496e1; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #1851b8 , #7cc2fc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #1851b8 , #7cc2fc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box span.fire{
+    background:  #e52200; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #dd0000 , #ff8800); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #dd0000 , #ff8800); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box span.fairy{
+    background:  #f57bcb; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #cb2d7b , #fc89da); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #cb2d7b , #fc89da); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box span.fighting{
+    background:  #fda600; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #ff8800 , #fbc300); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #ff8800 , #fbc300); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.ice{
+    background:  #63ceef; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #0b95ca , #88e6ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #0b95ca , #88e6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box span.electric{
+    background:  #382f62; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #41124a , #2e5380); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #41124a , #2e5380); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.normal{
+    background:  #bdbdbd; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #999999 , #cccccc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #999999 , #cccccc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.psychic{
+    background:  #81339c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #472cab , #a03695); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #472cab , #a03695); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box span.poison{
+    background:  #91d114; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #377f01 , #abfc38); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #377f01 , #abfc38); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.rock{
+    background:  #8b7260; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #594841 , #927864); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #594841 , #927864); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.steel{
+    background:  #7f8080; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #666666 , #ccc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #666666 , #ccc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box span.water{
+    background:  #137fa9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,  #084f66 , #1a9ed5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,  #084f66 , #1a9ed5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+#filter_types > button {
+
+}
+.about_pokemon {
+    position: absolute;
+    text-align: center;
+    display: none;
+    width: 260px;
+    height: auto;
+    *background-color: #bdbdbd;
+    border: 1px solid #bdbdbd;
+    left: 61%;
+    top: 330px;
+    transition: all 0.2s ease;
+    padding: 20px 0;
+    color: #101115;
+}
+.clear {
+    clear: both;
+}
+.more_pokemons {
+    clear: both;
+    text-align: center;
+    width: 60%;
+    margin: 40px;
+}
+.load_btn {
+    padding: 10px 20px;
+    background-color: #137fa9;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.load_btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.character_pokemon {
+    display: table;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 14px;
+
+}
+.row {
+    display: table-row;
+    text-align: left;
+}
+.row > div {
+    display: table-cell;
+    border: 1px solid #7f8080;
+    padding: 5px 10px 5px 15px;
+}
+.row > div:first-child {
+    border-right: none;
+    margin: 15px;
+}
+/* media */
+
+
+@media all and (max-width: 730px) {
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    .about {
+        text-align: center;
+    }
+    .about > span{
+        display: block;
+        margin: 2px auto;
+    }
+    .list_pokemon {
+        width: 80%;
+    }
+    .box {
+        width: 25%;
+        float: left;
+        padding: 20px;
+        border: 1px solid #bdbdbd;
+        height: 260px;
+        margin: 10px;
+    }
+}
+@media all and (min-width: 730px) and (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    .about {
+        text-align: center;
+    }
+    .about > span{
+        display: block;
+        margin: 2px auto;
+    }
+    .list_pokemon {
+        width: 80%;
+        margin-left: 2%;
+    }
+    .box {
+        width: 25%;
+        float: left;
+        padding: 20px;
+        border: 1px solid #bdbdbd;
+        height: 260px;
+        margin: 10px;
+    }
+    .about_pokemon {
+        left: 69%;
+        right: 0;
+    }
+}
+@media all and (min-width: 1024px) and (max-width: 1200px) {
+    .wrapper {
+        width: 1000px;
+    }
+    .list_pokemon {
+        width: 75%;
+        margin-left: 4.5%;
+    }
+    .box {
+        width: 25%;
+        padding: 15px;
+    }
+    .about_pokemon {
+        left: 67%;
+        right: 0;
+    }
+}
+

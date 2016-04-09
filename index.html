@@ -1,1 +1,72 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokedesk</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<h2>Pokedesk</h2>
+
+		<div id="filter_types"></div>
+
+		<div id="content" class="list_pokemon left"></div>
+		<div id="info" class="about_pokemon"></div>
+		<div class="more_pokemons">
+			<button class="load_btn">Load more</button>
+		</div>
+
+		<div id="info_template" class="" style="display: none;">
+			<div class="single_pokemon">
+				<img src="" class="image_val">
+				<h4 class="name_val"></h4>
+				<div class="character_pokemon">
+					<div class="row">
+						<div class="char">Type</div>
+						<div class="value type_val"></div>
+					</div>
+					<div class="row">
+						<div class="char">Attack</div>
+						<div class="value att_val"></div>
+					</div>
+					<div class="row">
+						<div class="char">Defense</div>
+						<div class="value def_val"></div>
+					</div>
+					<div class="row">
+						<div class="char">HP</div>
+						<div class="value hp_val"></div>
+					</div>
+					<div class="row">
+						<div class="char">SP Attack</div>
+						<div class="value spa_val"></div>
+					</div>
+					<div class="row">
+						<div class="char">SP Defense</div>
+						<div class="value spd_val"></div>
+					</div>
+					<div class="row">
+						<div class="char">Speed</div>
+						<div class="value speed_val"></div>
+					</div>
+					<div class="row">
+						<div class="char">Weight</div>
+						<div class="value wgt_val"></div>
+					</div>
+					<div class="row">
+						<div class="char">Total moves</div>
+						<div class="value total_val"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
